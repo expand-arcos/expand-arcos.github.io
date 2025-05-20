@@ -1,0 +1,33 @@
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      header img {
+        max-height: 100px;
+        object-fit: contain;
+      }
+
+      nav a.nav-link {
+        color: #333;
+        font-weight: 500;
+      }
+
+      nav a.nav-link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      main {
+        min-height: 400px;
+        padding: 2rem 0;
+      }
+

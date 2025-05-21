@@ -31,10 +31,10 @@
 		  <div class="collapse navbar-collapse justify-content-center">
 		    <ul class="navbar-nav">
 			<li class="nav-item">
-			    <a class="nav-link" id="objetivos" href="#objetivos">Objetivos</a>
+			    <a class="nav-link text-white" id="objetivos" href="#objetivos">Objetivos</a>
 			</li>
 			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle text-white" href="#paquetestrabajo" id="paquetestrabajo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  <a class="nav-link dropdown-toggle text-white" href="#paquetestrabajo" id="paquetestrabajo" role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">
                              Paquetes de trabajo
 			  </a>
 			  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="paquetestrabajo">
@@ -44,7 +44,7 @@
 			  </ul>
 			</li>
 			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle text-white" href="#" id="entregables" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  <a class="nav-link dropdown-toggle text-white" href="#entregables" id="entregables" role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">
                              Entregables
 			  </a>
 			  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="entregables">
@@ -139,10 +139,10 @@
 	  <html>
 	  <table width="100%" align="center">
 	  <tr align="center">
-		<td><img class="rounded float-start" width="150px" src="https://xpn-arcos.github.io/images/authors/author_fgarcia.png"></td>
-		<td><img class="rounded float-start" width="150px" src="https://xpn-arcos.github.io/images/authors/author_dcamarmas.png"></td>
-		<td><img class="rounded float-start" width="150px" src="https://xpn-arcos.github.io/images/authors/author_acaldero.png"></td>
-		<td><img class="rounded float-start" width="150px" src="https://xpn-arcos.github.io/images/authors/author_jcarretero.png"></td>
+		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_fgarcia.png"></td>
+		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_dcamarmas.png"></td>
+		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_acaldero.png"></td>
+		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_jcarretero.png"></td>
 	  </tr>
 	  <tr align="center">
 		<td>Félix García Carballeira</td>
@@ -159,7 +159,7 @@
 
 
     <!-- Footer -->
-    <footer>
+    <footer class="fixed-bottom">
       <div class="container">
         <p class="mb-0">The Expand Parallel File System Project (2022-2025)</p>
       </div>
@@ -168,9 +168,16 @@
   </body>
 
   <script>
-  $('.dropdown').hover(function() {
-     $('.dropdown-toggle', this).trigger('click');
-  });
+  let dropdowns = document.querySelectorAll('.dropdown-toggle')
+  dropdowns.forEach((dd)=>{
+    dd.addEventListener('mouseover', function (e) {
+        let alldd = document.querySelectorAll('.dropdown-toggle')
+        alldd.forEach((ddi)=>{
+            ddi.nextElementSibling.style.display = 'none'
+        })
+        this.nextElementSibling.style.display = 'block'
+    })
+  })
   </script>
 
 </html>

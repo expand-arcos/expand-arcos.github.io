@@ -31,35 +31,42 @@
 		  <div class="collapse navbar-collapse justify-content-center">
 		    <ul class="navbar-nav">
 			<li class="nav-item">
-			    <a class="nav-link text-white" id="objetivos" href="#objetivos">Objetivos</a>
+			    <a class="nav-link text-white dropdown-closer" href="#sponsors">Sponsors</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link text-white dropdown-closer" href="#objetivos">Objectives</a>
 			</li>
 			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle text-white" href="#paquetestrabajo" id="paquetestrabajo" role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">
-                             Paquetes de trabajo
-			  </a>
+			  <a class="nav-link dropdown-toggle text-white" href="#paquetestrabajo" 
+           role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">Work packages</a>
 			  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="paquetestrabajo">
-                             <li><a class="dropdown-item" href="#wp1">Paquete 1</a></li>
-                             <li><a class="dropdown-item" href="#wp2">Paquete 2</a></li>
-                             <li><a class="dropdown-item" href="#wp3">Paquete 3</a></li>
+                             <li><a class="dropdown-item" href="#wp1">WP 1. XPN prototype</a></li>
+                             <li><a class="dropdown-item" href="#wp2">WP 2. XPN release</a></li>
+                             <li><a class="dropdown-item" href="#wp3">WP 3. Validation</a></li>
+                             <li><a class="dropdown-item" href="#wp4">WP 4. Scheduling</a></li>
 			  </ul>
 			</li>
 			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle text-white" href="#entregables" id="entregables" role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">
-                             Entregables
-			  </a>
+			  <a class="nav-link dropdown-toggle text-white" href="#entregables" id="entregables" 
+           role="button" data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false">Deliverables</a>
 			  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="entregables">
-                             <li><a class="dropdown-item" href="#entregable1">Entregable 1</a></li>
-                             <li><a class="dropdown-item" href="#entregable2">Entregable 2</a></li>
+                             <li><a class="dropdown-item" href="#d11">D 1.1</a></li>
+                             <li><a class="dropdown-item" href="#d21">D 2.1</a></li>
+                             <li><a class="dropdown-item" href="#d22">D 2.2</a></li>
+                             <li><a class="dropdown-item" href="#d31">D 3.1</a></li>
+                             <li><a class="dropdown-item" href="#d32">D 3.2</a></li>
+                             <li><a class="dropdown-item" href="#d41">D 4.1</a></li>
+                             <li><a class="dropdown-item" href="#d42">D 4.2</a></li>
 			  </ul>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link text-white" href="#codigo">Acceso al código</a>
+			    <a class="nav-link text-white dropdown-closer" href="#codigo">Expand release</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link text-white" href="#diseminacion">Diseminación</a>
+			    <a class="nav-link text-white dropdown-closer" href="#diseminacion">Dissemination</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link text-white" href="#participantes">Participantes</a>
+			    <a class="nav-link text-white dropdown-closer" href="#contact">Contact</a>
 			</li>
 		    </ul>
 		  </div>
@@ -73,40 +80,131 @@
     <!-- Main -->
     <main class="container mx-auto" data-bs-spy="scroll" data-bs-target="#navbar-example2"  data-bs-smooth-scroll="true"  tabindex="0">
 
-      <a name="#objetivos"></a>
-      <h3 id="objetivos">Objetivos</h3>
+      <h3 id="sponsors">Sponsors</h3>
       <p>
+        <img src="miccin-300x96.png">
       </p>
 
-      <a name="#paquetestrabajo"></a>
-      <h3 id="paquetestrabajo">Paquetes de trabajos</h3>
+      </br><!-- br -->
+
+      <h3 id="objetivos">Objectives</h3>
       <p>
+        The objective of the project is to develop and release an open-source high-performance parallel and distributed file system for HPC and Big Data environments, both for clusters and hybrid clouds.
+        The goal is to transform the Expand parallel file system, researching and developing new mechanisms, in order to obtain a new technology that is distributed as open-source,
+        and that can be used in operation in companies and research centres with HPC and Big Data applications.
+        This project also aims to make Expand a high-performance file system suitable for use in both HPC and Big Data environments, 
+        in a way that differentiates it from existing products that are either adapted to the Big Data ecosystem, such as HDFS, or are adapted to HPC environments,
+        as for example Lustre parallel file system. The objective is to obtain a product for addressing the fundamental I/O gap on current HPC and Big Data infrastructures,
+        both for clusters and hybrid clouds, reducing installation, administration, and maintenance costs.
+        <p></p>
+
+        To achieve the former general goal, the project will pursue the following specific goals:
+        <ul>
+          <li>
+            <b>O1.</b> Improving the current prototype by including fault tolerance techniques and mechanisms for use in both HPC and Big Data environments. 
+          </li>
+          <li>
+            <b>O2.</b> Transforming the prototype into a system that can be used in production and real applications in companies and research centres with storage and high-performance needs in the input/output.
+          </li>
+          <li>
+            <b>O3.</b> Evaluating the feasibility of the final version of Expand through relevant use cases.
+          </li>
+          <li>
+            <b>O4.</b> Planning and coordinating project activities and to promote the use of Expand and to increase impact. 
+          </li>
+        </ul>
+      </p>
+
+      </br><!-- br -->
+
+      <h3 id="paquetestrabajo">Work packages</h3>
+      <ul>
+          <a id="wp1"></a>
+          <h5>WP1. Expand prototype for HPC and Big environments</h5>
+          <p>
+          O1. Design and develop new functionalities and API libraries for improving the current prototype of Expand with techniques for fault tolerance support,
+          and mechanisms for use Expand in both HPC and Big Data environments, and new techniques for dynamic change in partition size.
+          </p>
+
+          <a id="wp2"></a>
+          <h5>WP2. Production release of Expand</h5>
+          <p>
+          O2. To transform the prototype into a system that can be used into production in companies and research centres with storage and
+          high-performance needs in the input/output.
+          </p>
+
+          <a id="wp3"></a>
+          <h5>WP3. Final validation</h5>
+          <p>
+          O3. Evaluate the feasibility of the final version of Expand through relevant use cases. As use cases we propose to use the results obtained
+          in the project entitled "Multi-source and multi-method prediction to support COVID-19 policy decision making". 
+          This project is a multidisciplinary project funded by the Community of Madrid in which several research teams from the Universidad Carlos III de  Madrid, 
+          including the ARCOS group, participate. Within this project different HPC and Big Data applications are being developed that make intensive use of
+          large volumes of data to model different COVID-19 propagation scenarios.
+          </p>
+
+          <a id="wp4"></a>
+          <h5>WP4. Coordination and scheduling of activities</h5>
+          <p>
+          O4. To plan and coordinate project activities and to promote results dissemination to increase impact.
+          </p>
+      </ul>
+
+      </br><!-- br -->
+
+      <h3 id="entregables">Deliverables</h3>
+
+      <ul>
+          <a id="wp1"></a>
+          <h5>WP1. Expand prototype for HPC and Big environments</h5>
           <ul>
-          <li>WP1</li>
-          <li>WP2</li>
-          <li>WP3</li>
+            <a id="d11"></a>
+            <li><a href="">D1.1. Report on new prototype of Expand with fault tolerance support for Big Data and HPC applications</li>
           </ul>
-      </p>
+          <br/>
 
-      <a name="#entregables"></a>
-      <h3 id="entregables">Entregables</h3>
-      <p>
+          <a id="wp2"></a>
+          <h5>WP2. Production release of Expand</h5>
           <ul>
-          <li>Entregable 1</li>
-          <li>Entregable 2</li>
+            <a id="d21"></a>
+            <li><a href="">D2.1. Final architecture of Expand</a></li>
+            <a id="d22"></a>
+            <li><a href="">D2.2. Installation and manual user guide</a></li>
           </ul>
-      </p>
+          <br/>
 
-      <a name="#codigo"></a>
-      <h3 id="codigo">Acceso al código</h3>
+          <a id="wp3"></a>
+          <h5>WP3. Final validation</h5>
+          <ul>
+            <a id="d31"></a>
+            <li><a href="">D3.1. Report on use cases and benchmarks</a></li>
+            <a id="d32"></a>
+            <li><a href="">D3.2. Report on final Evaluation</a></li>
+          </ul>
+          <br/>
+
+          <a id="wp4"></a>
+          <h5>WP4. Coordination and scheduling of activities</h5>
+          <ul>
+            <a id="d41"></a>
+            <li><a href="">D4.1. Intermediate Project Report</a></li>
+            <a id="d42"></a>
+            <li><a href="">D4.2. Final report of the project and conclusions</a></li>
+          </ul>
+      </ul>
+
+      </br><!-- br -->
+
+      <h3 id="codigo">The source code of the Expand Parallel File System</h3>
       <p>
       <ul>
-        El código es accesible desde: <br>
+        The source code can be reached from the GitHub repo: <br>
         <a href="https://github.com/xpn-arcos/xpn">https://github.com/xpn-arcos/xpn</a>
       </ul>
       </p>
 
-      <a name="#diseminacion"></a>
+      </br><!-- br -->
+
       <h3 id="diseminacion">Publications</h3>
       <p>
       <ul>
@@ -132,28 +230,25 @@
       </ul>
       </p>
 
-      <a name="#participantes"></a>
-      <h3 id="participantes">Participantes</h3>
+      </br><!-- br -->
+
+      <h3 id="contact">Contact</h3>
       <p>
       <ul>
-	  <html>
-	  <table width="100%" align="center">
-	  <tr align="center">
-		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_fgarcia.png"></td>
-		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_dcamarmas.png"></td>
-		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_acaldero.png"></td>
-		<td><img class="rounded float" width="150px" src="https://xpn-arcos.github.io/images/authors/author_jcarretero.png"></td>
-	  </tr>
-	  <tr align="center">
-		<td>Félix García Carballeira</td>
-		<td>Diego Camarmas Alonso</td>
-		<td>Alejandro Calderón Mateos</td>
-		<td>Jesús Carretero Pérez</td>
-	  </tr>
-	  </table>
-	  </html>
+      Welcome to our contact page for the Expand Parallel File System Project! <br>
+      We appreciate your interest in our work and look forward to hearing from you.<br>
+      <br/>
+      Whether you have a question, a suggestion, or just want to point something out, we invite you to get in touch with us. <br>
+      You can reach us via email at expand.arcos.inf.uc3m.es@gmail.com, 
+      and we will do our best to respond to your message as quickly as possible. <br>
+      <br/>
+      Thank you again for your interest in our Expand Parallel File System Project !<br>
       </ul>
       </p>
+
+      </br><!-- br -->
+
+      <p></p>
 
     </main>
 
@@ -171,12 +266,22 @@
   let dropdowns = document.querySelectorAll('.dropdown-toggle')
   dropdowns.forEach((dd)=>{
     dd.addEventListener('mouseover', function (e) {
-        let alldd = document.querySelectorAll('.dropdown-toggle')
+        let alldd = document.querySelectorAll('.dropdown-menu')
         alldd.forEach((ddi)=>{
-            ddi.nextElementSibling.style.display = 'none'
-        })
-        this.nextElementSibling.style.display = 'block'
-    })
+            ddi.classList.remove('show');
+        });
+        this.nextElementSibling.classList.add('show')
+    });
+  })
+
+  let ddc = document.querySelectorAll('.dropdown-closer')
+  ddc.forEach((dd)=>{
+    dd.addEventListener('mouseover', function (e) {
+        let alldd = document.querySelectorAll('.dropdown-menu')
+        alldd.forEach((ddi)=>{
+            ddi.classList.remove('show');
+        });
+    });
   })
   </script>
 
